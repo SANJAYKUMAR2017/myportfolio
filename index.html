@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio — Sanjaya Kumar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar">SK</div>
+        <div>
+          <h1 class="name gradient-cursive">Sanjaya Kumar</h1>
+          <p class="bio">Frontend developer building accessible, responsive interfaces with attention to detail.</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Theme toggle: accessible, persistent, and responsive (icon-only) -->
+      <button id="theme-toggle" class="btn theme-toggle" aria-pressed="false" aria-label="Toggle color theme">
+        <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"></svg>
+        <span class="sr-only">Toggle color theme</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="container section">
+      <h2 class="section-title gradient-cursive">Projects</h2>
+      <p class="section-sub">Selected work demonstrating design, performance, and front-end engineering.</p>
+
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3 class="gradient-cursive">Project Aurora</h3>
+            <p>A progressive web app for event discovery with offline support and fast search.</p>
+            <p class="tags">React • PWA • GraphQL</p>
+            <div class="card-actions">
+              <a href="#" class="btn">View</a>
+              <a href="#" class="btn ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3 class="gradient-cursive">Studio Notes</h3>
+            <p>Collaborative notes app with realtime cursors and markdown support.</p>
+            <p class="tags">TypeScript • WebSocket • Tailwind</p>
+            <div class="card-actions">
+              <a href="#" class="btn">Live</a>
+              <a href="#" class="btn ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3 class="gradient-cursive">DataViz Kit</h3>
+            <p>A small library of accessible charts and visualization components.</p>
+            <p class="tags">D3 • Accessibility • Packaging</p>
+            <div class="card-actions">
+              <a href="#" class="btn">Demo</a>
+              <a href="#" class="btn ghost">Docs</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Interested in working together? Send a message or email <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn primary">Send message</button>
+          <div id="form-note" class="form-note" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Sanjaya Kumar</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
